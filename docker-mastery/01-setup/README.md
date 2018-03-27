@@ -22,10 +22,13 @@ After installing "Docker for Mac", I went into the preferences by clicking on th
 ```bash
 # shows the Docker version information
 $ docker version
+
 # display system-wide information
 $ docker info
+
 # list running containers
 $ docker ps  
+
 # list images locally stored with Docker Engine
 $ docker images 
 ```

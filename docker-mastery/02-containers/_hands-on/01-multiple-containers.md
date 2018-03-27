@@ -17,7 +17,7 @@
 
 # Solution:
 1. Run the containers using the instructed configurations:
-    ```docker
+    ```bash
     $ docker container run --publish 80:80 --detach --name nginx nginx
 
     $ docker container run --publish 8080:80 --detach --name apache-httpd httpd
@@ -25,27 +25,27 @@
     $ docker container run --publish 3306:3306 --env MYSQL_RANDOM_ROOT_PASSWORD=yes --detach --name mysql mysql
     ```
 1. Confirm the containers are running:
-    ```docker
+    ```bash
     $ docker container ls
     ```
 1. Get the **Random Password** that mysql created on start-up:
-    ```docker
+    ```bash
     $ docker container logs mysql
     # GENERATED ROOT PASSWORD: fiNguf7aed4AeviushaemooChoip3zei
     ```
 1. Stop the running containers:
-    ```docker
+    ```bash
     $ docker container stop nginx apache-httpd mysql
     ```
 1. Confirm the containers are stopped:
-    ```docker
+    ```bash
     $ docker container ls -a
     ```
 1. Remove the containers:
-    ```docker
+    ```bash
     $ docker container rm nginx apache-httpd mysql
     ```
 1. Confirm the containers are removed:
-    ```docker
+    ```bash
     $ docker container ls -a
     ```
