@@ -61,8 +61,11 @@ $ docker container stats
 # Get more information about a container
 $ docker container inspect <container>
 
-# Start a container in shell environment (sets default command to bash)
+# Run a container in shell environment (sets default command to bash)
 $ docker container run -it <image> bash
+
+# Run a container, open it's bash, and remove it once bash closes
+$ docker container run --rm -it <image> bash
 
 # Get a shell environment of a running docker container
 $ docker container exec -it <container> bash
