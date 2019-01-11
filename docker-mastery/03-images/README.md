@@ -49,6 +49,10 @@ The dockerfile included is from the official 'nginx' Docker Hub Repo and has ple
 
 - **CMD** is a required parameter that is the final command that will be run every time you launch a new container from an image (or restart a stopped container).
 
+**Hands On:**
+
+
+
 **Typical Commands:**
 ```bash
 # List all images 
@@ -71,4 +75,7 @@ $ docker login
 
 # Uploads changed layers to an image registry (default: Docker Hub)
 $ docker image push <image>
+
+# Build a dockerfile
+$ docker build -t testnode .
 ```
